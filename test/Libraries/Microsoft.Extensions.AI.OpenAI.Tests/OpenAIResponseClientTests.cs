@@ -77,6 +77,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "input": [{
                     "type":"message",
                     "role":"user",
@@ -188,6 +189,7 @@ public class OpenAIResponseClientTests
                 "effort": "low"
               },
               "model": "o4-mini",
+              "background": false,
               "stream": true
             }
             """;
@@ -367,6 +369,7 @@ public class OpenAIResponseClientTests
                 "effort": "medium"
               },
               "model": "o4-mini",
+              "background": false,
               "stream": true
             }
             """;
@@ -484,6 +487,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "input":[
                     {
                         "type":"message",
@@ -599,6 +603,7 @@ public class OpenAIResponseClientTests
             """
             {
                 "model": "computer-use-preview",
+                "background": false,
                 "reasoning":{"summary":"concise"},
                 "tools": [
                     {
@@ -732,6 +737,7 @@ public class OpenAIResponseClientTests
             """
             {
                 "model": "computer-use-preview",
+                "background": false,
                 "reasoning": {
                     "summary": "concise"
                 },
@@ -828,6 +834,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model": "gpt-4o-mini",
+                "background": false,
                 "input": [
                     {
                         "type": "message",
@@ -905,6 +912,7 @@ public class OpenAIResponseClientTests
                 "top_p": 0.5,
                 "previous_response_id": "resp_42",
                 "model": "gpt-4o-mini",
+                "background": false,
                 "max_output_tokens": 10,
                 "text": {
                     "format": {
@@ -1074,6 +1082,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "input": [{
                     "type":"message",
                     "role":"user",
@@ -1191,6 +1200,7 @@ public class OpenAIResponseClientTests
         string input = """
             {
               "model": "gpt-4o-mini",
+              "background": false,
               "tools": [
                 {
                   "type": "mcp",
@@ -1300,10 +1310,11 @@ public class OpenAIResponseClientTests
             chatOptions.ConversationId = response.ConversationId;
         }
 
-        input = $$"""
+        input = """
             {
                 "previous_response_id": "resp_04e29d5bdd80bd9f0068e6b01f786081a29148febb92892aee",
                 "model": "gpt-4o-mini",
+                "background": false,
                 "tools": [
                     {
                         "type": "mcp",
@@ -1459,6 +1470,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model": "gpt-4o-mini",
+                "background": false,
                 "tools": [
                     {
                         "type": "mcp",
@@ -1723,6 +1735,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model": "gpt-4o-mini",
+                "background": false,
                 "tools": [
                     {
                         "type": "mcp",
@@ -2596,6 +2609,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model":"gpt-4o-2024-08-06",
+                "background":false,
                 "input":[{
                     "type":"message",
                     "role":"user",
@@ -2724,6 +2738,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model":"gpt-4o-2024-08-06",
+                "background":false,
                 "input":[{
                     "type":"message",
                     "role":"user",
@@ -2963,6 +2978,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "previous_response_id":"resp_12345",
                 "input": [{
                     "type":"message",
@@ -3021,6 +3037,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "conversation":{"id":"conv_12345"},
                 "input": [{
                     "type":"message",
@@ -3079,6 +3096,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "store":false,
                 "input": [{
                     "type":"message",
@@ -3141,6 +3159,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "previous_response_id":"resp_override",
                 "input": [{
                     "type":"message",
@@ -3203,6 +3222,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "previous_response_id":"resp_fromraw",
                 "input": [{
                     "type":"message",
@@ -3265,6 +3285,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "store":true,
                 "input": [{
                     "type":"message",
@@ -3327,6 +3348,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "store":true,
                 "input":[
                     {
@@ -3408,6 +3430,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "store":false,
                 "input":[
                     {
@@ -3489,6 +3512,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "conversation":{"id":"conv_12345"},
                 "input":[
                     {
@@ -3567,6 +3591,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o-mini",
+                "background":false,
                 "previous_response_id":"resp_12345",
                 "input":[
                     {
@@ -3645,6 +3670,7 @@ public class OpenAIResponseClientTests
         {
             "temperature":0.5,
             "model":"gpt-4o-mini",
+            "background":false,
             "conversation":{"id":"conv_12345"},
             "input": [{
                 "type":"message",
@@ -3707,6 +3733,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o",
+                "background":false,
                 "input": [{
                     "type":"message",
                     "role":"user",
@@ -3765,6 +3792,7 @@ public class OpenAIResponseClientTests
             {
                 "temperature":0.5,
                 "model":"gpt-4o",
+                "background":false,
                 "input":[
                     {
                         "type":"message",
@@ -5122,6 +5150,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model": "gpt-4o",
+                "background": false,
                 "tools": [
                     {
                         "type": "image_generation",
@@ -5215,6 +5244,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model": "gpt-4o",
+                "background": false,
                 "tools": [
                     {
                         "type": "image_generation",
@@ -5325,6 +5355,7 @@ public class OpenAIResponseClientTests
         const string Input = """
             {
                 "model": "gpt-4o",
+                "background": false,
                 "tools": [
                     {
                         "type": "image_generation",

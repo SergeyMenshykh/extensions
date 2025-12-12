@@ -31,6 +31,7 @@ public class ChatOptionsTests
         Assert.Null(options.Tools);
         Assert.Null(options.AdditionalProperties);
         Assert.Null(options.RawRepresentationFactory);
+        Assert.False(options.AllowBackgroundResponses);
 
         ChatOptions clone = options.Clone();
         Assert.Null(clone.ConversationId);
@@ -51,7 +52,7 @@ public class ChatOptionsTests
         Assert.Null(clone.AdditionalProperties);
         Assert.Null(clone.RawRepresentationFactory);
         Assert.Null(clone.ContinuationToken);
-        Assert.Null(clone.AllowBackgroundResponses);
+        Assert.False(clone.AllowBackgroundResponses);
     }
 
     [Fact]
